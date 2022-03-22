@@ -146,7 +146,7 @@ await fetch("https://chain.wax.io/v1/chain/get_account", {
           const newList = {
             "Asteroid": [],
             "Plasma": [],
-            "Oxygenk": []
+            "Oxygen": []
           };
           await items.rows.forEach(async (elem) => {
             const tmp = this.findInTemplate("tools", elem.template_id);
@@ -218,8 +218,8 @@ await fetch("https://chain.wax.io/v1/chain/get_account", {
           if (newList["Plasma"].length) {
             this.$store.commit("user/setItem", { value: newList["Plasma"], type: "Plasma" });
           }
-          if (newList["Oxygenk"].length) {
-            this.$store.commit("user/setItem", { value: newList["Oxygenk"], type: "Oxygenk" });
+          if (newList["Oxygen"].length) {
+            this.$store.commit("user/setItem", { value: newList["Oxygen"], type: "Oxygen" });
           }
 
         });
