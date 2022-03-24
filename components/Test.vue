@@ -99,7 +99,7 @@
             ).toFixed(4)
           }} -->
           ??
-          PLASMA <img src="https://www.cryptofarms.f12key.shadysapy.fr/assets/img/coins/cfe.png" referrerpolicy="no-referrer" class="game-img" />
+          PLASMA <img src="https://www.galaxyminer.f12key.shadysapy.fr/assets/img/coins/Plasma.png" referrerpolicy="no-referrer" class="game-img" />
         </p>
         <p
           :class="
