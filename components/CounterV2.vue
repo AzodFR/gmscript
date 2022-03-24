@@ -137,13 +137,13 @@ export default {
         ) {
           if (
             this.claiminfo.type != "Members" && this.claiminfo.type != "Crops" &&
-            this.item.current_durability <= this.item.durability_usage * this.$store.state.user.members[this.claiminfo.type] &&
+            this.item.current_durability <= this.item.durability_usage  &&
             this.$store.state.user.autorepair[this.claiminfo.type][
               this.item.asset_id
             ]
           ) {
             let cost =
-              (this.item.durability - this.item.current_durability) * 0.3;
+              (this.item.durability - this.item.current_durability) * 0.2;
             if (this.$store.state.user.ressources["PLASMA"] >= cost) {
               const r_action = {
                 actions: [
@@ -261,7 +261,7 @@ export default {
             )
               return;
             if ( this.claiminfo.type != "Members" && this.claiminfo.type != "Crops" &&
-              this.item.current_durability <= this.item.durability_usage * this.$store.state.user.members[this.claiminfo.type] &&
+              this.item.current_durability <= this.item.durability_usage &&
               this.$store.state.user.autorepair[this.claiminfo.type][
                 this.item.asset_id
               ]
